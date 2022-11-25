@@ -1,6 +1,8 @@
 * {
+  /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,33 +16,40 @@ body {
 
 .container {
   width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin: 0 auto;
 }
 
 .main-header {
   background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  /* height: 80px; */
 }
 
 nav {
   font-size: 18px;
+  /* text-align: center; */
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -71,7 +80,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 p {
@@ -89,11 +98,20 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
   margin-bottom: 0;
 }
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
 
 #author {
   font-style: italic;
@@ -109,10 +127,22 @@ li:last-child {
   font-weight: bold;
 }
 
+/* ul {
+  list-style: none;
+} */
+
 .related {
   list-style: none;
   margin-left: 0;
 }
+
+body {
+  /* background-color: orangered; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
 
 li:first-child {
   font-weight: bold;
@@ -120,6 +150,10 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+}
+
+li:nth-child(even) {
+  /* color: red; */
 }
 
 /* Misconception: this won't work! */
@@ -156,6 +190,12 @@ a:active {
 }
 
 nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
   margin-right: 30px;
   display: inline-block;
 }
@@ -168,7 +208,10 @@ button {
   font-size: 22px;
   padding: 20px;
   cursor: pointer;
+
   position: absolute;
+  /* top: 50px;
+  left: 50px; */
   bottom: 50px;
   right: 50px;
 }
@@ -178,7 +221,12 @@ h1::first-letter {
   margin-right: 5px;
 }
 
+h3 + p::first-line {
+  /* color: red; */
+}
+
 h2 {
+  /* background-color: orange; */
   position: relative;
 }
 
@@ -195,6 +243,11 @@ h2::before {
   right: -25px;
 }
 
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
 .copyright {
   color: blue;
 }
@@ -205,10 +258,18 @@ h2::before {
 
 footer p {
   color: green !important;
-}
+} */
 
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
+
+/* FLOATS */
+/*
 .author-img {
   float: left;
+  margin-bottom: 20px;
 }
 
 .author {
@@ -217,13 +278,25 @@ footer p {
   margin-left: 20px;
 }
 
-.clearfix::after {
-  content: "";
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
   clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
   display: block;
 }
 
-/* article {
+article {
   width: 825px;
   float: left;
 }
@@ -231,13 +304,14 @@ footer p {
 aside {
   width: 300px;
   float: right;
-} */
+}
 
 footer {
   clear: both;
-  width: 100%;
 }
+*/
 
+/* FLEXBOX */
 .main-header {
   display: flex;
   align-items: center;
@@ -272,12 +346,13 @@ footer {
 
 .related-author {
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   font-style: italic;
 }
 
-.row {
+/* FLEXBOX LAYOUT */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -285,11 +360,40 @@ footer {
 }
 
 article {
-  /* flex: 0 0 825px; */
   flex: 1;
   margin-bottom: 0;
 }
+
 aside {
-  /* flex-basis: 300px; */
+  
+  DEFAULTS:
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  /* grid-column: 1 / span 2; */
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1 / -1;
 }
