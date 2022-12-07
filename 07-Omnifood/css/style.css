@@ -364,6 +364,38 @@
   padding: 9.6rem 0;
 }
 
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-content: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: 1.4rem;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
 .plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
@@ -400,4 +432,31 @@
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.featured-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.featured-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
