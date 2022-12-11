@@ -7,6 +7,7 @@
   /* sticky nav */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -63,7 +64,7 @@
   color: #333;
 }
 
-.icon-mobile-nav[name="close-ouline"] {
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
 
