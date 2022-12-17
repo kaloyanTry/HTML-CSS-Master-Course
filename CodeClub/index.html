@@ -12,22 +12,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
 
     <title>Code101</title>
   </head>
   <body>
     <header>
-      <span>Code101</span>
+      <p><ion-icon class="logo-icon" name="school"></ion-icon></p>
+
       <nav>
-        <a href="#bottom" id="top" class="btn-top">Научи повече</a>
+        <a href="#bottom" id="top" class="btn-top"
+          >Научи повече <span>&darr;</span></a
+        >
       </nav>
       <!-- <img src="images/code-1900-1485.jpg" alt="Background image coding" /> -->
     </header>
@@ -50,10 +45,29 @@
       </section>
       <section class="main-img">
         <img src="images/monkey-640-359.jpg" alt="Student working photo" />
+        <p>Нашият учител работи</p>
       </section>
     </main>
     <footer id="footer">
-      <a href="#top"> <p id="bottom">Copyright &copy;</p></a>
+      <h2>Follow us:</h2>
+      <div class="footer-logos">
+        <ion-icon name="logo-googleplus"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-skype"></ion-icon>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+      </div>
+      <h4>We are coding:</h4>
+      <div class="footer-using">
+        <ion-icon name="logo-html5"></ion-icon>
+        <ion-icon name="logo-css3"></ion-icon>
+        <ion-icon name="logo-javascript"></ion-icon>
+      </div>
+      <a href="#top" id="bottom" class="footer-copy">Copyright &copy;</a>
     </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
