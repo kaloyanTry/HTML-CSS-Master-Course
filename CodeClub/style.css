@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -33,26 +33,40 @@ header {
   left: 0.8em;
   font-size: 3em;
   color: cornsilk;
+  opacity: 0.8;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 48em;
+  grid-template-columns: 1fr 1fr;
+  height: 64em;
+  margin-top: 4em;
 }
 
 .main-info {
   width: 100%;
-  padding: 1.2em;
+  padding: 0 1.2em 0 1.2em;
   color: #1d0303;
+  font-size: 2.8em;
+}
+
+.main-info h1,
+.main-info h2 {
   font-size: 2.4em;
+  font-weight: 500;
+}
+
+.main-info h2 {
+  padding-top: 1.2em;
+  font-size: 0.8em;
 }
 
 .main-text,
 .main-info li {
   margin-top: 1.2em;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.6em;
+  line-height: 1.2em;
 }
 
 .main-info li {
@@ -71,7 +85,13 @@ main {
 
 .main-img p {
   padding: 1.4em;
-  font-size: 1.4em;
+  font-size: 1.6em;
+}
+
+.main-icon {
+  padding-right: 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .btn-top {
@@ -82,6 +102,8 @@ main {
   border-radius: 9px;
   border: none;
   text-decoration: none;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 nav span {
@@ -89,29 +111,39 @@ nav span {
 }
 
 footer {
-  padding: 4.2em 0 1.2em 0;
+  padding: 3.2em 0 1.2em 0;
   height: 28em;
   text-align: center;
-
-  color: #fff;
+  color: #faf2bb;
   background-color: #1d0303;
 }
 
 .footer-logos,
 .footer-using {
-  font-size: 1.8em;
-  padding: 0.8em 0 1.6em;
+  font-size: 2.4em;
+  padding: 0.6em 0 0.6em 0;
   text-decoration: none;
 }
 
-h2,
-h4 {
-  font-size: 1.8em;
+.footer-using a {
+  text-decoration: none;
+  color: #faf2bb;
+}
+
+.footer-logos {
+  color: #faf2bb;
+}
+
+footer h2 {
+  padding-bottom: 0.6em;
+  color: #faf2bb;
+  font-size: 0.8em;
   font-weight: 400;
 }
 
 .footer-copy {
+  padding-top: 1.8em;
   text-decoration: none;
-  font-size: 1.2em;
-  color: #ddd;
+  font-size: 1.4em;
+  color: #faf2bb;
 }
