@@ -36,6 +36,17 @@ header {
   opacity: 0.8;
 }
 
+.btn-top {
+  background-color: cornsilk;
+  color: #1d0303;
+  font-size: 0.8em;
+  padding: 0.6em 1.4em;
+  border-radius: 9px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,16 +59,16 @@ main {
   padding: 0 1.2em 0 1.2em;
   color: #1d0303;
   font-size: 2.8em;
-}
-
-.main-info h1,
-.main-info h2 {
-  font-size: 2.4em;
   font-weight: 500;
 }
 
+.main-info h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
 .main-info h2 {
-  padding-top: 1.2em;
+  padding-top: 1.8em;
   font-size: 0.8em;
 }
 
@@ -77,6 +88,13 @@ main {
   font-weight: 500;
 }
 
+.main-icon {
+  padding-right: 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
 .main-img {
   width: 100%;
   text-align: center;
@@ -84,26 +102,8 @@ main {
 }
 
 .main-img p {
-  padding: 1.4em;
-  font-size: 1.6em;
-}
-
-.main-icon {
-  padding-right: 1.2em;
-  font-size: 1.2em;
-  font-weight: 500;
-}
-
-.btn-top {
-  background-color: cornsilk;
-  color: #1d0303;
-  font-size: 0.8em;
-  padding: 0.6em 1.4em;
-  border-radius: 9px;
-  border: none;
-  text-decoration: none;
-  opacity: 0.8;
-  cursor: pointer;
+  padding: 1.8em;
+  font-size: 1.8em;
 }
 
 nav span {
