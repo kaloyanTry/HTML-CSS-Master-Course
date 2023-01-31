@@ -4,7 +4,6 @@ const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 // Make the navigation work:
-
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
@@ -42,7 +41,6 @@ allLinks.forEach(function (link) {
 });
 
 // Sticky navigation:
-
 const sectionHeroEl = document.querySelector(".section-hero");
 
 const obs = new IntersectionObserver(
